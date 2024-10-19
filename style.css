@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#right {
+  display: flex;
+  align-items: center;
+}
+.selling
+{
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    width: 58%;
+   margin-left: 25%;    
+}
+.selling:hover{
+  transform: scale(1.03);
+} 
+
+
+@media (max-width: 768px) {
+  #homepage {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  /* Adjust buttons */
+  button {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .home-1 h3,
+  .home-1 h1,
+  .home-1 h5 {
+    font-size: smaller;
+  }
+
+  .home-1 h1 {
+    font-size: 150px;
+  }
+
+  .slider-container h1 {
+    font-size: 30px;
+  }
+  #seller {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .selling {
+    margin-left: 20%;
+    margin-top: 30px;
+  }
+  .customer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .deals1,
+  #deals2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #deals2 img {
+    width: 100%;
+    height: auto;
+  }
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #contact .contact1,
+  #contact .contact2,
+  #contact .contact3 {
+    margin-bottom: 20px;
+  }
+  /*sandy_changes  */
+  .home-1 {
+    border: 2px solid white;
+    background-image: url("image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+  }
+  .home-1 p:nth-child(1) {
+    margin-top: 120px;
+    font-size: 40px;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+  .home-1 p{
+ 
+    font-size: 40px;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+  .home-1 h3 {
+    font-size: 30px;
+    opacity: 0.6;
+  }
+  .home-1 button {
+    margin-left: 200px;
+    width: 150px;
+    height: 50px;
+  }
+
+  .home-1 h1 {
+    font-size: 120px;
+    color: black;
+    opacity: 0.3;
+  }
+  .home-1 h1 spam {
+    color: white;
+    opacity: 0.3;
+  }
+  .home-2 {
+    display: none;
+  }
+  .slider-container {
+    /* border: 2px solid rebeccapurple; */
+  }
+  .slides {
+    width: 100%;
+    height: 30vh;
+  }
+  .slides img {
+    width: 100%;
+    height: 30vh;
+  }
+ 
+  .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .time-box {
+    border: double black;
+    border-radius: 20%;
+    font-size: large;
+    width: 80px;
+    height: 50px;
+    padding-left: 0px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  #days {
+    padding-left: 5%;
+  }
+  #hours,
+  #minutes,
+  #seconds {
+    padding-left: 5%;
+  }
+  .slides{
+    position: relative;
+  }
+  .shop{
+    position:absolute;
+    color:black;
+    top: 40%;
+    left: 38%;
+    width: 30%;    
+
+  }
+  .slides button{
+    background-color:white; /* Initial color */
+        border-radius:60%;
+        border: none;
+        padding: 10px 30px;
+        color: red;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+       
+  }
+  .sell1{
+    margin-left: 2%;
+  }
+  /* sandy_changes */
+}
+
+/* Tablet and larger devices */
+@media (min-width: 769px) {
+  #homepage {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li
+  {
+    font-size: 25px;
+    margin: 10px;
+    padding: 2px;
+  }
+
+  /* Adjusting layout for desktop view */
+  #data {
+    display: flex;
+    justify-content: space-between;
+    /* sandy */
+    height: 100vh;
+    /* border: 2px solid red; */
+    /*  */
+  }
+
+  #seller {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 5px;
+  }
+
+  /* Deals section layout */
+  #deals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .deals1,
+  #deals2 {
+    width: 50%;
+  }
+
+  /* Footer adjustments for larger devices */
+  #contact {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #contact .contact1,
+  #contact .contact2,
+  #contact .contact3 {
+    width: 30%;
+  }
+  /*sandy_changes  */
+  .home-1 {
+    /* border: 2px solid blue; */
+  }
+  .home-1 p {
+    font-size: 60px;
+    /* border: 1px solid blue; */
+    margin: 0px;
+  }
+  /* 14/10 */
+  .home-1 p:nth-child(2) {
+    font-size: 60px;
+    /* border: 1px solid blue; */
+    margin: 0px;
+    padding: 0px;
+    font-weight: 0;
+    margin-left: 50px;
+  }
+  .home-1 h3 {
+    font-size: 50px;
+    margin-left: 70px;
+    font-weight: 700 ;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .home-1 button {
+    margin-left: 0px;
+    width: 150px;
+    height: 50px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 500;
+
+    /* border: 1px solid blue; */
+  }
+  .home-1-grp {
+    margin-left: 210px;
+    margin-top: 150px;
+  }
+
+  .home-1 h1 {
+    font-size: 150px;
+    color: black;
+    opacity: 0.3;
+    margin: 0;
+    margin-left: 88%;
+  }
+  .shop{
+    margin: top 0;
+  }
+  /* .home-1 h1 spam{
+        color: whitesmoke;
+        
+    } */
+  /* slider-container */
+  .slider-container {
+    /* border:2px solid rosybrown */
+  }
+  .slider-container h1 {
+    font-size: 45px;
+    /* border: 2px solid darkcyan; */
+  }
+  .slides {
+    width: 100%;
+
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .slides img {
+    width: 100%;
+  }
+  .slider-container a {
+    font-size: 35px;
+    padding-left: 45%;
+  }
+  #deals {
+    /* border: 2px solid red */
+  }
+  .deals1 {
+    /* border: 2px solid red */
+  }
+  .deals1 h1 {
+    margin-left: 20px;
+    font-size: 40px;
+    font-size: 35px;
+  }
+  .deals1 p {
+    margin-left: 200px;
+    font-size: 30px;
+    margin-top: 17%;
+  }
+  .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*  */
+  
+  }
+  .time-box {
+    border: double black;
+    border-radius: 20%;
+    font-size: xx-large;
+    width: 130px;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 30px;
+    /*  */
+    
+  }
+  #days {
+    padding-left: 15%;
+  }
+  #hours,
+  #minutes,
+  #seconds {
+    padding-left: 25%;
+  }
+
+  #deals2 {
+    background-color: #f2f2f2;
+  }
+  #contact
+{
+  margin-top: 30px;
+  height:50vh;
+  padding-left: 130px;
+  padding-top: 100Px;
+}
+.slides{
+  position: relative;
+}
+.shop{
+  position:absolute;
+  color:black;
+  top: 50%;
+  left: 45%;
+
+}
+.slides button{
+  background-color:white; /* Initial color */
+      border-radius:60%;
+      border: none;
+      padding: 10px 30px;
+      color: red;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+     
+}
+.sell1{
+  margin-left: 20%;
+}
+}
+.sell-image {
+  height: 200px;
+}
+.selling figcaption, .selling a {
+  margin-left: 20%;
+  font-size: 20px;
+  /* border: 2px  solid red ; */
+}
+.selling figure img 
+{
+  margin-left: 10%;
+}
+.sell1
+{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+
+ margin-top: 5%;
+}
+

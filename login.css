@@ -1,0 +1,146 @@
+*{
+   box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Global settings to avoid overflow on the entire page */
+html, body {
+   
+    overflow-x: hidden; 
+    height: auto;
+     /* Prevent horizontal scrolling */
+}
+.logo
+{
+  font-size:45px; font-weight:800;margin-left:50px;margin-top:10px;
+}
+.container
+{
+	width: auto;
+	height: 100vh;
+	display: flex;
+
+}
+.img{
+
+width: 60%;
+height: 100vh;
+background-image:url('login.png');
+background-position: center;
+ background-repeat: no-repeat;
+ background-size: 60% 100vh;
+ background-color: #f9f4f1;
+
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.form
+{	margin-left: 5%;
+	margin-top: 10%;
+    margin-right: 5%;
+}
+.logp
+{   font-size:50px;
+  text-align: center; 
+  font-weight:600;
+  margin-top:20%;
+}
+.sign
+{
+  background-color: seashell; /* Tomato color */
+  color: black;
+  
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px; /* Rounded corners */
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none; /* Remove default underline if there is any */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: fit-content;
+}
+.sign:hover {
+  background-color: seashell; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+  border: 1px solid lightblue;
+}
+
+/* Focus and active states */
+.sign:focus, .sign:active {
+  background-color: #ff4500;
+  outline: none;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  html, body {
+   
+    overflow-x: hidden; 
+    height: auto;
+    background-color: #f9f4f1;
+     /* Prevent horizontal scrolling */
+}
+  .logo
+  {
+    font-size:25px; font-weight:800;margin-left:10px;margin-top:10px;
+  }
+    .container {
+        flex-direction: column; /* Stack the content vertically */
+         width:100%;
+          height: 100%;
+        
+         overflow:hidden; /* Allow content to adjust height based on the content */
+    }
+
+    .img {
+        /* Make the image section full width */
+        height: 50vh; 
+        width:100%;
+        min-width:100%/* Reduce the height of the image */
+         /* Adjust the background to cover the entire section */
+        background-repeat: no-repeat;
+
+background-position: center;
+background-size: contain;
+ background-color: #f9f4f1;
+
+
+    }
+    .logp
+{   font-size:40px;
+  text-align: center; 
+  font-weight:600;
+  margin-top:2%;
+}
+
+    .form {
+        margin-left: 1%;
+        margin-top: 5%;
+        margin-right: 1%;
+    background-color: #f9f4f1;
+        
+        
+    }
+    .box{
+      margin-top: 0px;
+     
+    box-sizing: border-box;
+        background-color: #f9f4f1;
+     
+    }
+
+    input[type=text], input[type=password] {
+        width: 100%; /* Keep inputs full width */
+        padding: 10px; /* Slightly smaller padding */
+    }
+}

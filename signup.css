@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  /*	border: 2px solid black;*/
+}
+.img {
+  width: 60%;
+  background-image: url("signup1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #c1b3aa;
+}
+.img h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="Email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.box {
+  width: 40%;
+  height: 100vh;
+}
+.form {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.box p {
+  font-size: 40px;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 4%;
+  margin-top: 13%;
+}
+.log {
+  margin-left: 55%;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically for mobile */
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Let the height adjust based on the content */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .log {
+    margin-left: 40%;
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Additional mobile styles (optional) */
+  .container > * {
+    margin-bottom: 20px; /* Add space between each child element */
+    width: 100%; /* Make each child element take full width */
+  }
+
+  .img {
+    height: 60vh; /* Adjust image height for smaller screens */
+    background-size: contain; /* Ensure background image covers the container */
+    background-position: center; /* Keep the image centered */
+  }
+  .img h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .box p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1%;
+  }
+
+  .form {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .box {
+    height: auto;
+  }
+}
